@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The iconics</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    
+</head>
+<body>
+   <div class="container">
+        <div class="header">
+            <div class="left-side-navbar">
+              <h1> The iconics</h1>
+            </div>
+            <div class="middle-navbar">
+                <ul id="mid-nav">
+                    <li id="Home" title="Home">Home</li>
+                    <li id="Shop" title="Shop">Shop</li>
+                    <li id="Blog" title="Blog">Blog</li>
+                    <li id="About" title="About">About</li>
+                    <li id="Contact" title="Contact">Contact</li>
+                </ul>
+                <ul>
+                    <li class="menu" title="menu"><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </div>
+            <div class="right-side-navbar">
+                <ul id="right-noav">
+                    <li id="search" title="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li id="my-cart" title="my-cart">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" >
+                    </li>
+                    <li id="login" title="login">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg" alt="Login"  width="24" height="24">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="first-slide">
+                <div>THE BEST OF
+                <span>What's new?</span>
+                <button>shop now</button>
+            </div>
+                <img src="https://images-cdn.ubuy.co.in/662e9ed7a6d8d7054b14e7ab-danceemangoo-elegant-high-waist-pleated.jpg" >
+            </div>
+        </div>
+        <div class="top-deals">
+            <div class="write-top-deal">
+                Top deals
+            </div>
+            <div class="top-deals-container">
+                <div class="dress" id="indo-western">
+                    <img src="images/indo-westren.png" alt="" ><i  id = "heart" class="fa-solid fa-heart"></i>
+                    <h3>georgette indo western gown</h3><br>
+                    <h3 style="color: rgb(39, 169, 39);">1,699Rs</h3><br>
+                     <span style="color:crimson;">free delivery</span> 
+                </div>
+                <div class="dress" id="western">
+                    <img src="images/western.png" alt="" ><i  id = "heart" class="fa-solid fa-heart"></i>
+                    <h3> Western Wear Stylish Dress</h3><br>
+                    <h3 style="color: rgb(39, 169, 39);">491Rs</h3><br>
+                     <span style="color:crimson;">free delivery</span> 
+                </div>
+                <div class="dress" id="lehenga">
+                    <img src="images/indian-lehenge.jpg" alt=""><i  id = "heart" class="fa-solid fa-heart"></i>
+                    <h3>Indian Blue bridal designer Lehenga</h3><br>
+                    <h3 style="color: rgb(39, 169, 39);">1,500Rs</h3><br>
+                     <span style="color:crimson;">free delivery</span> 
+                </div>
+                <div class="dress" id="salwar">
+                    <img src="images/salwar-suit.png" alt=""><i id = "heart" class="fa-solid fa-heart"></i>
+                    <h3> Indian Salwar Kameez For Women</h3><br>
+                    <h3 style="color: rgb(39, 169, 39);">1,000Rs</h3><br>
+                     <span style="color:crimson;">free delivery</span> 
+                </div>
+            </div>
+        </div> 
+        <div class="latest-style">
+            <div class="shop">Shop by Occasion</div>
+            <div class="women-style">
+                <img src="images/occasion-img1.png" alt="" id="occasion1">
+                <img src="images/occasion-img2.png" alt="" id="occasion2">
+                <img src="images/occasion-img3.png" alt="" id="occasion3">
+                <img src="images/occasion-img4.png" alt="" id="occasion4">
+            </div>
+        </div>
+        <div class="traditional-dress">
+            <div class="write-traditional">
+                Traditional-Dress
+            </div>
+            <div class="traditional-slide">
+                <div class="t-dropdown">
+                <div class="brands">
+                    <span>Brands
+                    <img  class="drop-arrow" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" 
+                    alt="Chevron"   width="24" height="24"></span>
+                <div class="brands-dropdown">
+                <ul>
+                    <li>indo era</li>
+                    <li>Libas</li>
+                    <li>BIBA</li>
+                    <li>DIVASTRI</li>
+                    <li>aurelia</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sort-by">
+                <span>sort by
+                <img  class="drop-arrow" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" 
+                alt="Chevron"   width="24" height="24"></span>
+                <div class="sort-by-dropdown">
+                <ul>
+                    <li>Relevance</li>
+                    <li>popularity</li>
+                    <li>price--low to high</li>
+                    <li>price -- high to low</li>
+                    <li>Newest First</li>
+                </ul>
+        </div>
+        </div>
+            <div class="filters">
+                <span>Filters
+                <img  class="drop-arrow" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K" 
+                alt="Chevron"   width="24" height="24"></span>
+                <div class="filters-dropdown">
+                <ul>
+                    <li>Saree</li>
+                    <li>lehenga</li>
+                    <li>salwar-suit</li>
+                    <li>Indian gown</li>
+                </ul>
+            </div>
+        </div>
+    
+            <div class="dress-slide">
+                <div class="t-dress" id="women-gown">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTbrpOx1DI-tLqMAILIXmYKi0mcu8qf6bV_glJXtxipdpTQwxmgEUkiNCRpDXETlAy0be-kIhrlhk2Nbtea3umq80y-2D4RtEAsXzRAFwZB" alt="">
+                    <i id="card" class="fa-solid fa-layer-group"></i>
+                    <h3>Designer Women Gown with Dupatta </h3><br>
+                    <h3 style="color: crimson;">2,001Rs</h3><br>
+                    <span style="color: rgb(60, 227, 60);">30%off</span>
+                </div>
+                <div class="t-dress" id="Anarkali-gown">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTfHgnVRbsqA6VaEH8vk25Knfg7GnaMYVTsIYlt_R2aCuiyYz5xhYxq7ddORoKxWB0UVCTtysvO4_4NiqTz-FkKi4rn4GinsocrR6s8KZf-jDrR-1yD938SHtk" alt="">
+                    <i id="card" id="card1" class="fa-solid fa-layer-group"></i>
+                    <h3>Women's Embroidered Anarkali Gown with Dupatta </h3><br>
+                    <h3 style="color: crimson;">1,099Rs</h3><br>
+                    <span style="color: rgb(60, 227, 60);">40%off</span>
+                </div>
+                <div class="t-dress" id="lehenga-choli">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20230705/R3PZ/64a5993feebac147fc5023c7/-473Wx593H-466335208-yellow-MODEL.jpg" alt="">
+                    <i id="card" class="fa-solid fa-layer-group"></i>
+                    <h3>Embellished Flared Lehenga Choli Set with Dupatta </h3><br>
+                    <h3 style="color: crimson;">1,899Rs</h3><br>
+                    <span style="color: rgb(60, 227, 60);">80%off</span>
+                </div>
+                <div class="t-dress" id="peacock">
+                    <img src="https://www.riccoindia.com/cdn/shop/products/image_ed5afdba-d951-4248-86f9-6a4d7a9090a9_1024x1024.jpg?v=1634776144" alt="">
+                    <i id="card" id="card2" class="fa-solid fa-layer-group"></i>
+                    <h3>LEHENGA WITH PEACOCK EMBROIDERY  </h3><br>
+                    <h3 style="color: crimson;">50,000Rs</h3><br>
+                    <span style="color: rgb(60, 227, 60);">40%off</span>
+                </div>
+                <div class="t-dress" id="sharara-suit">
+                    <img src="https://miro.medium.com/v2/resize:fit:850/1*wOfNAWIWLHMhRNXG90xYJg.jpeg" alt="">
+                    <i id="card" class="fa-solid fa-layer-group"></i>
+                    <h3>Grey Net Designer Pakistani Sharara Suit</h3><br>
+                    <h3 style="color: crimson;">3000Rs</h3><br>
+                    <span style="color: rgb(60, 227, 60);">50%off</span>
+                </div>
+                <div class="t-dress" id="women-saree">
+                    <img src="https://assets2.andaazfashion.com/media/catalog/product/p/i/pink-with-cream-satin-saree-with-silk-blouse-1-sarv01415.jpg" alt="">
+                    <i id="card" class="fa-solid fa-layer-group"></i>
+                    <h3>Designer Women saree with golden EMBROIDERY </h3><br>
+                    <h3 style="color: crimson;">2,001Rs</h3><br>
+                    <span style="color: rgb(60, 227, 60);">40%off</span>
+                </div>
+            </div>
+            
+        </div>
+   </div> 
+
+   <!--western slide-->
+   <div class="western-slide">
+                    <div class="western-dress">
+                        Western dress
+                    </div>
+                    <div class="western-slider">
+                        <div  id="first-img" class="img">
+                            <img src="https://i.pinimg.com/originals/bb/18/3b/bb183becf580d002203286e766965383.png" alt="" >
+                            <div class="contain">
+                                <span class="dress">Black dress</span>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae accusantium nam eum, consequatur quam a iusto vero saepe veniam sit qui. Molestiae quo quisquam facere a tenetur, dolore sint.</div>
+                                <button class="buynow">Buy now</button>
+                                </div>
+                        </div>
+                        
+                        <div id="second-img" class="img">
+                            <img src="https://images.meesho.com/images/products/119953048/roj8d_512.webp" alt="">
+                            <div class="contain">
+                                <span class="dress"> western dress </span>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae accusantium nam eum, consequatur quam a iusto vero saepe veniam sit qui. Molestiae quo quisquam facere a tenetur, dolore sint.</div>
+                                <button class="buynow">Buy now</button>
+                                </div>
+                        </div>
+                        <div id="third-img" class="img">
+                            <img src="https://i.pinimg.com/736x/f0/b9/b2/f0b9b2d63f291c1beefef187037ce1f5.jpg" alt="">
+                            <div class="contain">
+                                <span class="dress">Princess gown</span>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae accusantium nam eum, consequatur quam a iusto vero saepe veniam sit qui. Molestiae quo quisquam facere a tenetur, dolore sint.</div>
+                                <button class="buynow">Buy now</button>
+                                </div>
+                        </div>
+                        <div id="fourth-img" class="img">
+                            <img src="https://m.media-amazon.com/images/I/61CUcltR2bL._AC_UY1000_.jpg" alt="">
+                            <div class="contain">
+                                <span class="dress">Designer gown</span>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae accusantium nam eum, consequatur quam a iusto vero saepe veniam sit qui. Molestiae quo quisquam facere a tenetur, dolore sint.</div>
+                                <button class="buynow">Buy now</button>
+                                </div>
+                        </div>
+                        <div id="fifth-img" class="img">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/BO/NO/HX/135849435/women-s-latest-party-wear-western-dresses.jpg" alt="">
+                            <div class="contain">
+                                <span class="dress">Designer top</span>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae accusantium nam eum, consequatur quam a iusto vero saepe veniam sit qui. Molestiae quo quisquam facere a tenetur, dolore sint.</div>
+                                <button class="buynow">Buy now</button>
+                                </div>
+                        </div>
+                        <div id="sixth-img" class="img">
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2024/4/407094484/FU/YX/IN/156447699/s11-green-1-500x500.jpg" alt="">
+                            <div class="contain">
+                                <span class="dress">party dress</span>
+                                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae accusantium nam eum, consequatur quam a iusto vero saepe veniam sit qui. Molestiae quo quisquam facere a tenetur, dolore sint.</div>
+                                <button class="buynow">Buy now</button>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- <div class="arrows">
+                        <button id="swiper-button-prev"><</button>
+                        <button id="swiper-button-next">></button>
+                    </div> -->
+   </div>
+   <div class="bridal-container">
+        <div class="write-bridal-lehenga">
+            Bridal Lehenga
+        </div>
+        <div class="bridal-dress">
+            <div class="bridal-img" id="b-img1">
+                <div class="first-side1">
+                <img  id="b-img1-img" class="bridal" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSHksNx4YBBg1tIKVyCE_GUT8SjDut9xc3XkkXRblGfkmA8Wk8GmaYo0Z1uCxlHC9fXVgvlV51SkfDggS5ZZwFMejoTbNtyMjiVmM-pPa8" alt="">
+            </div>
+            <div class="second-side1">
+                <div  id="b1-content" class="b-content">Indya Maroon Paisley Zari Embroidered Velvet Bridal Lehenga And Blouse Set With Dupattas And Belt ILL01101</div>
+                <img  id="b-img1-img2" class="b1-img"  src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ60_1qe3zvOozSL_vIrEDkOotmAVy-0V0bF9WKR6HQdR6xOQgKWtD6T9bhdt1pAdCKuZsKnuU0PYB00Dw9X7DhMA4JxWOnqOTE7Pol" alt="">
+                <img  id="b-img1-img3"  class="b2-img" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQZR_80WqIlTu8Sdu7zVyCiS0kxhWKxC549OkTr6DzQmZrbVy91CFKfh2SJ7SUJpG9lhRerxo62f1kovTYsvoHbi9kdv8syAl_pueAr-6D5ZeGVdlN_ty4" alt="">
+                <div id="bd1-paise" class="b-prise">37,850Rs</div>
+                <div id="bd1-discount" class="b-discount">40%off</div>
+            </div>
+            </div>
+            <div class="bridal-img" id="b-img2">
+                <div class="first-side2">
+                    <img id="b-img2-img" class="bridal" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSWNdwT68TT0KBiMqGte3RcyYBmjAmEemhusF_JwhUUMTf4SDvsOUga0acS4nzV8ty3P1nVSddvPPONgaMtSxQu4KshPPoXfeHlJg-zI8DS" alt="" >
+    
+                </div>
+                <div class="second-side2">
+                <div class="b-content" id="b2-content">Great Maroon Dori Work Embroidered Velvet Bridal Lehenga Choli With Double Dupatta</div>
+                <img id="b-img2-img2" class="b1-img" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSvtk5DCIm6qicbBoaLS1h1hlXh4P7-2pRZlQa8BGgt__bSGaA5t44X0HN-ydyWWDodZWCS-DTB203HC0KZQ2P_O-i6CX5MVVMe67c_Xw" alt="" >
+                <img id="b-img2-img3" class="b2-img" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQsvU0mUBrZmdYBEnKepTwe1wPPWx8E6LpVQzuvI2FxfhE2NhTLGaeGeDkoHjc_yGoVwpy5ztqqKW77UhZutUNcVmIVRyNOCJ9cThx_" alt="" >
+                <div id="bd2-paise" class="b-prise">25,199Rs</div>
+                <div id="bd2-discount" class="b-discount">30%off</div>
+            </div>
+           
+            </div>
+            <div class="bridal-img" id="b-img3">
+                <div class="first-side3">
+                <img id="b-img3-img" class="bridal" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRzUkp8Llv7gW6AmbIW7Te_MsoO243q20NrOZRMBMPOTm5P26kHmoCyaYGyHbKAQ92qfuLYsRunsD59ZjiNXRDx9R-vkK9Xjya9ldaidTpk" alt="" >
+            </div>
+            <div class="second-side3">
+                <div class="b-content" id="b3-content">Beautiful Pink Thread Work Velvet Bridal Lehenga Choli With Dupatta And Belt ILL01101</div>
+                <img id="b-img3-img2" class="b1-img" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTiWKmAr54NGDlLbD66jb9_V2eq6aFK8ifDDfEi6sCeSoxfWUxktdZds-Ca--isq8FSg7DjSgGyWWTkGHU5mj-_CTkyCo6IyXF9kPgBkA" alt="" >
+                <img id="b-img3-img3" class="b2-img" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRUOgRUKjrKoOWqUfU5StP3UiogbIzud-mKy6Wx49BU0pZB-TePh33SD_zXHBzDOgl-7L9BSmivQqVHvIX4v6dPw0Hr25lEUtMXfA-1SQ" alt="" >
+                <div id="bd3-paise" class="b-prise">50,000Rs</div>
+                <div id="bd3-discount" class="b-discount">45%off</div>
+            </div>
+            </div>
+        </div>
+   </div>
+   
+</div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1231 @@
+@import url(https://fonts.google.com/share?selection.family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000);
+html , body {
+    margin:0;
+    padding:0;
+    scrollbar-width: 100px;
+    scroll-behavior: smooth;
+}
+/* body::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    scrollbar-width: 100px;
+    color: #000;
+} */
+
+.container {
+    height:100%;
+    width:100%;
+    /* background-color:#fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container .header {
+    height: 70px;
+    width:97%;
+    left: 1.2vw;
+    background: rgb(238, 207, 212);
+    /* background: #ffffffb0; */
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 1vw;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+.header .left-side-navbar {
+    /* width:100px; */
+    /* position: relative; */
+    /* justify-content: center; */
+    margin-left: 5vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-align: start;
+    text-transform:capitalize;
+    text-decoration: none;
+    color: red;
+}
+.header .middle-navbar {
+    /* width: 400px; */
+    /* position: absolute; */
+    display: flex;
+    flex-direction: rows;
+    margin-left: 4vw;
+
+}
+.header .middle-navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* padding: 20px 40px; */
+    font-size: 2vw;
+    gap: 2vw;
+    font-weight: bold;
+}
+.header .middle-navbar ul li{
+    /* width: 300px; */
+    /* height: 30px; */
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+.header .middle-navbar ul .menu {
+    display: none;
+}
+.header .middle-navbar ul li:hover{
+    /* background-color: aquamarine; */
+    animation: moveline 0.5s linear 1 forwards;
+}
+@keyframes moveline {
+    100% {
+        text-decoration:underline rgb(126, 126, 126);
+    }
+}
+.header .right-side-navbar {
+    /* width: 500px; */
+    /* position: relative; */
+    margin-left: 5vw;
+    margin-right: 0.5vw;
+}
+.header .right-side-navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:1.5vw;
+}
+.header .right-side-navbar ul li {
+    font-size: 2vw;
+    font-weight: bold;
+    
+}
+.header .right-side-navbar ul li>img {
+    color: #000;
+    opacity: 0.795;
+}
+.container .slider {
+    top: 8vw;
+    width:97%;
+    margin-left:1.2vw;
+    display: flex;
+    position: absolute;
+    background-origin: padding-box;
+    border-radius: 10px;
+}
+.slider .first-slide {
+    height:80vh;
+    /* position: absolute; */
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(247, 207, 142);
+}
+.slider .first-slide div{
+    font-size:3vw;
+    /* top:300px; */
+    text-align:start;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+.slider .first-slide div>span{
+    color:rgb(222, 45, 45);
+    display: block;
+    font-size:10vw;
+}
+.slider .first-slide div>button{
+    height: 3.5vw;
+    width: 10vw;
+    color: aliceblue;
+    font-size: 2vw;
+    border: transparent;
+    background-color:rgb(229, 41, 104);
+    text-align: center;
+    position: absolute;
+    left: 15vw;
+    top:55vh;
+}
+.slider .first-slide>img {
+    margin-top:1vh; 
+    height:75vh;
+    width: 35vw;
+}
+
+.container .top-deals {
+    width:97%;
+    margin-top:85vh;
+    margin-left: 2vw;
+    border-radius: 10px;
+}
+.container .top-deals .write-top-deal {
+    text-align: center;
+    font-size: 4.2vw;
+}
+.container .top-deals .top-deals-container {
+    width:100%;
+    height: 47vh;
+    margin-top:1vw;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.top-deals-container .dress {
+    border:2px solid rgb(134, 133, 133);
+    height:45vh;
+    width:18vw;
+    gap:2vw;
+    /* display: none; */
+    text-align: center;
+}
+.top-deals-container .dress > img {
+    /* object-fit: contain; */
+    height: 30vh;
+    width:18vw;
+        /* border-radius: 10px; */
+
+}
+.top-deals-container .dress > i {
+    font-size: 2vw;
+    color:#fff;
+    position: absolute;
+    z-index: 1;
+    margin-left: -2.5vw ;
+    margin-top: 1vh;
+    /* border: 2px solid black; */
+}
+
+.top-deals-container .dress >h3 {
+    display: inline;
+}
+
+.container .latest-style {
+    width:97%;
+    /* border:2px solid black; */
+    margin-top:5vh;
+    margin-left: 2vw;
+    border-radius: 10px;
+}
+.container .latest-style .shop {
+    text-align: center;
+    font-size: 4.5vw;
+}
+.container .latest-style .women-style {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:2vw;
+}
+.container .latest-style .women-style>img {
+    height: 40vh;
+    width: 20vw;
+    border-radius: 10px;
+}
+.container .latest-style .women-style>img:hover {
+    transform: scaleX(2);
+    zoom:120%;
+}
+.container .traditional-dress {
+    margin-top: 6vh;
+    margin-left: 2vw;
+    width: 97%;
+}
+.traditional-dress .write-traditional {
+    text-align: center;
+    /* border: 2px solid black; */
+    font-size: 4vw;
+}
+.traditional-dress .traditional-slide {
+    /* border:2px solid black; */
+    width: 100%;
+    height: 105vh;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.traditional-dress .t-dropdown {
+    width: 20vw;
+    /* height: 100vh; */
+    margin-top: 1.5vh;
+    /* border: 2px solid black; */
+}
+.traditional-dress .t-dropdown .brands {
+    /* height: 32.5vh; */
+    border: 2px solid black;
+    gap: 2vh;
+    /* background-color: rgb(70, 70, 70); */
+    /* color: #fff; */
+}
+
+.traditional-dress .t-dropdown .brands>span  {
+    /* border: 2px solid rgb(255, 254, 254); */
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(128, 128, 128); 
+     color: #fff;
+} 
+.traditional-dress .t-dropdown .brands .drop-arrow{
+    width: 5vw;
+    height: 4vh;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+.t-dropdown .brands .brands-dropdown{
+    display: block;
+    margin-top: -2vh;
+    margin-left:-1vw;
+    /* text-align: center; */
+}
+.t-dropdown .brands ul  {
+    /* border: 2px solid rgb(255, 254, 254); */
+    list-style:square;
+}
+.t-dropdown .brands ul li {
+    margin-top: 1vh;
+}
+/* .traditional-dress .t-dropdown .brands:hover .drop-arrow {
+    transform: rotate(180deg);
+}
+.t-dropdown .brands:hover .brands-dropdown {
+    display: block;
+}  */
+.t-dropdown .brands ul li:hover{
+    background-color: rgb(70, 70, 70); 
+    color: #fff;
+} 
+
+.traditional-dress .t-dropdown .sort-by {
+    /* height: 32.5vh; */
+    border: 2px solid black;
+    /* background-color: rgb(70, 70, 70); */
+    /* color: #fff; */
+}
+
+.traditional-dress .t-dropdown .sort-by>span  {
+    /* border: 2px solid rgb(255, 254, 254); */
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(128 , 128 , 128); 
+    color: #fff;
+} 
+.traditional-dress .t-dropdown .sort-by .drop-arrow{
+    width: 5vw;
+    height: 4vh;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+.t-dropdown .sort-by .sort-by-dropdown{
+    display: block;
+    margin-top: -2vh;
+    margin-left:-1vw;
+    /* text-align: center; */
+    /* font-size: 2vw; */
+}
+.t-dropdown .sort-by ul  {
+    /* border: 2px solid rgb(255, 254, 254); */
+    list-style:square;
+}
+.t-dropdown .sort-by ul li {
+    margin-top: 1vh;
+}
+/* .traditional-dress .t-dropdown .sort-by:hover .drop-arrow {
+    transform: rotate(180deg);
+}
+.t-dropdown .sort-by:hover .sort-by-dropdown {
+    display: block;
+} */
+.t-dropdown .sort-by ul li:hover{
+    background-color: rgb(70, 70, 70); 
+    color: #fff;
+}
+
+.traditional-dress .t-dropdown .filters {
+    /* height: 32.5vh; */
+    border: 2px solid black;
+    /* background-color: rgb(70, 70, 70); */
+    /* color: #fff; */
+}
+
+.traditional-dress .t-dropdown .filters>span  {
+    /* border: 2px solid rgb(255, 254, 254); */
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(128 ,128 , 128);
+    color: #fff;
+} 
+.traditional-dress .t-dropdown .filters .drop-arrow{
+    width: 5vw;
+    height: 4vh;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+.t-dropdown .filters .filters-dropdown{
+    display: block;
+    margin-top: -2vh;
+    margin-left:-1vw;
+    /* text-align: center; */
+}
+.t-dropdown .filters ul  {
+    /* border: 2px solid rgb(255, 254, 254); */
+    list-style:square;
+}
+.t-dropdown .filters ul li {
+    margin-top: 1vh;
+}
+/* .traditional-dress .t-dropdown .filters:hover .drop-arrow {
+    transform: rotate(180deg);
+}
+.t-dropdown .filters:hover .filters-dropdown {
+    display: block;
+} */
+.t-dropdown .filters ul li:hover{
+    background-color: rgb(70, 70, 70); 
+    color: #fff;
+}
+.traditional-slide .dress-slide {
+    /* border: 2px solid black; */
+    width:75vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5vw;   
+    margin-left: 20.5vw;
+    margin-top:-70vh;
+}
+.traditional-dress .dress-slide .t-dress {
+    border:2px solid black;
+    height: 45vh;
+    width: 40vh;
+    margin-top: -1vw;
+    border-radius: 10px;
+    text-align: center;
+}
+.traditional-dress .dress-slide .t-dress>img {
+    /* object-fit: contain; */
+    height:30vh;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.traditional-dress .dress-slide .t-dress>h3 {
+    display: inline;
+    text-align: center;
+}
+.traditional-dress .dress-slide .t-dress> i {
+    font-size: 2vw;
+    background-color: #fff;
+    /* color:#fff; */
+    position: absolute;
+    z-index: 1;
+    margin-right: 16vw ;
+    margin-top: -7vh;
+    border:2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+.traditional-dress .dress-slide .t-dress #card1 {
+    font-size: 2vw;
+    background-color: #fff;
+    /* color:#fff; */
+    position: absolute;
+    z-index: 1;
+    /* margin-left:5vw ; */
+    margin-left: -2vw;
+    margin-top: -7vh;
+    border:2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+.traditional-dress .dress-slide .t-dress #card2 {
+    font-size: 2vw;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    margin-left: -3.5vw ;
+    margin-top: -7vh;
+    border:2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+
+/*western-slide*/
+.western-slide {
+    width:100%;
+    height: 70vh;
+    left:2vw;
+    /* border:2px solid black; */
+}
+
+.western-slide .western-dress{
+    text-align: center;
+    font-size: 5vw;
+    text-shadow: 2px 5px 5px black;
+}
+.western-slide .western-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+    gap:5vw;
+    height: 60vh;
+    overflow: auto;
+}
+.western-slide .western-slider::-webkit-scrollbar{
+    display: none;
+}
+.western-slide .western-slider .img {
+    height: 50vh;
+    width:30vw;
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 10px;
+    box-sizing: border-box;
+    /* background-color: rgb(159, 159, 159); */
+    
+}
+.western-slide .western-slider .img .contain {
+    overflow: hidden;
+    height:5vh;
+    transform: translateY(0);
+    margin-bottom: 12vh;
+    box-sizing: content-box;
+    right: 8px;
+    background-color: rgba(255 ,255 , 255, 0.5);
+    border-radius: 10px;
+
+}
+
+ .contain .dress {
+    font-weight: bold;
+    font-size: 2vw;
+    margin-left: 5vw;
+ }
+.contain .content {
+    font-size: 1.7vw;
+    margin-top: 2vh;
+    line-height: 4.2vh;
+}
+.contain .buynow {
+    font-size: 1.5vw;
+    background-color: #eee;
+    margin-left: 4vw;
+    margin-top: 2vh;
+    border: none;
+    height: 5vh;
+    width: 12vw;
+}
+
+
+.western-slide .western-slider .img:hover .contain{
+    color: #281e1e;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+@keyframes showContent {
+    to{
+        opacity:1;
+        filter: blur(0);
+        transform: translateY(-220px);
+        overflow: visible;
+        height: 50vh;
+    width: 100%;
+    margin-left:1vw;
+    background-color: rgba(173, 168, 168, 0.5);
+    opacity: 1;
+    border-radius: 20px;
+    color: #681919;
+    }
+}
+
+.western-slide .western-slider .img>img {
+    height: 44vh;
+    width:20vw;
+    border-radius: 10px;
+    background-color: rgb(106, 106, 106);
+    mix-blend-mode:hard-light;
+}
+
+#swiper-button-prev {
+width: 5vw;
+height: 5vh;
+border-radius: 50px;
+background-color: rgba(126, 126, 126, 0.267);
+border: none;
+font-family: monospace;
+color: #fff;
+font-weight: bold;
+font-size: large;
+z-index: 100;
+margin-left: 45vw;
+/* color: #000; */
+}
+#swiper-button-next{
+    width: 5vw;
+height: 5vh;
+border-radius: 50px;
+background-color: rgba(126, 126, 126, 0.267);
+border: none;
+font-family: monospace;
+color: #fff;
+font-weight: bold;
+font-size: large;
+z-index: 100;
+margin-left: 1vw;
+position: absolute;
+margin-top: -0.2vh;
+}
+
+#swiper-button-prev :hover {
+    background-color: #eee;
+color: #555;
+}
+#swiper-button-next :hover {
+    background-color: #eee;
+    color: #555;
+}
+
+/*bridal-container*/
+
+.bridal-container {
+    margin-top: 10vh;
+    width:100%;
+    /* border:2px solid black; */
+}
+.write-bridal-lehenga {
+    text-align: center;
+    font-size: 4.7vw;
+    font-weight: bold;
+    text-shadow: 2px 3px 3px rgb(122, 122, 122);
+}
+.bridal-dress{
+    /* border: 2px solid black; */
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+}
+.bridal-img {
+    height: 45vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background-color: #c3a5a5;
+}
+.bridal-img .first-side1{
+    width: 30vw;
+}
+.bridal-img #b-img1-img {
+    width: 25vw;
+    height: 42vh;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    border: 2px solid black;
+}
+.bridal-img .second-side1{
+    width: 75vw;
+    margin-top: 1vw;
+}
+.bridal-img #b1-content {
+    font-weight: bold;
+    font-size: 2vw;
+}
+.bridal-img #b-img1-img2 {
+    height: 15vh;
+    border-radius: 10%;
+    margin-top: 2vh;
+}
+.bridal-img #b-img1-img3 {
+    height: 15vh;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-radius: 10%;
+}
+.bridal-img #bd1-paise{
+    font-weight: bolder;
+    font-size: 2vw;
+    margin-top: 1vh;
+}
+.bridal-img #bd1-discount {
+    font-weight: bolder;
+    font-size: 2vw;
+    margin-top: 1vh;
+    color: green;
+}
+.bridal-img .first-side2{
+    width: 30vw;
+}
+.bridal-img #b-img2-img {
+    width: 25vw;
+    height: 42vh;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    border: 2px solid black;
+}
+.bridal-img .second-side2{
+    width: 75vw;
+    margin-top: 1vw;
+}
+.bridal-img #b2-content {
+    font-weight: bold;
+    font-size: 2vw;
+}
+.bridal-img #b-img2-img2 {
+    height: 15vh;
+    border-radius: 10%;
+    margin-top: 2vh;
+}
+.bridal-img #b-img2-img3 {
+    height: 15vh;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-radius: 10%;
+}
+.bridal-img #bd2-paise{
+    font-weight: bolder;
+    font-size: 2vw;
+    margin-top: 1vh;
+}
+.bridal-img #bd2-discount {
+    font-weight: bolder;
+    font-size: 2vw;
+    margin-top: 1vh;
+    color: green;
+}
+.bridal-img .first-side3{
+    width: 30vw;
+}
+.bridal-img #b-img3-img {
+    width: 25vw;
+    height: 42vh;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    border: 2px solid black;
+}
+.bridal-img .second-side3{
+    width: 75vw;
+    margin-top: 1vw;
+}
+.bridal-img #b3-content {
+    font-weight: bold;
+    font-size: 2vw;
+}
+.bridal-img #b-img3-img2 {
+    height: 15vh;
+    border-radius: 10%;
+    margin-top: 2vh;
+}
+.bridal-img #b-img3-img3 {
+    height: 15vh;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    border-radius: 10%;
+}
+.bridal-img #bd3-paise{
+    font-weight: bolder;
+    font-size: 2vw;
+    margin-top: 1vh;
+}
+.bridal-img #bd3-discount {
+    font-weight: bolder;
+    font-size: 2vw;
+    margin-top: 1vh;
+    color: green;
+}
+@media (max-width:600px) {
+        .container .header {
+            /* background-color: rgb(71, 215, 71); */
+            height: 60px;
+        }
+        .header .left-side-navbar {
+            font-size: 3vw;
+        }
+        .header .middle-navbar ul li {
+            display: none;
+        }
+        .header .middle-navbar ul .menu {
+            display: block;
+            font-size: 5vw;
+            text-align: end;
+            /* margin-left: 10vw; */
+        }
+        .header .right-side-navbar ul li {
+            font-size: 5vw;
+            margin-top: 3vw;
+            display: flex;
+            margin: 4vw;
+            margin-left: -3vw;
+        }
+        
+        /* slider  */
+
+        .container .slider {
+            margin-top:5vh;
+            height: 40vh;
+        }
+        .slider .first-slide {
+            height:35vh;
+        }
+        .slider .first-slide div>button {
+            top:24vh;
+            height:3vh;
+            width: 15vw;
+        }
+        .slider .first-slide div{
+            font-size:5vw;
+            text-align:start;
+            font-weight: bolder;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .slider .first-slide div>span{
+            color:rgb(222, 45, 45);
+            font-size:8vw;
+        }
+        .slider .first-slide>img {
+            height:30vh;
+        }
+
+        /*top deals*/
+
+        .container .top-deals {
+            margin-top:38vh;
+            margin-left: 2vw; 
+        }
+        .container .top-deals .write-top-deal {
+            font-size: 6vw;
+        }
+        .container .top-deals .top-deals-container {
+            height: 47vh;
+            margin-top:1vw;
+        }
+        .top-deals-container .dress {
+            border:2px solid rgb(134, 133, 133);
+            height:39vh;
+            width:40vw;
+            flex-wrap: wrap;
+            gap:4vw;
+            text-align: center;
+            margin-top:2vw;
+        }
+        .top-deals-container .dress > img {
+            height: 25vh;
+            width:100%;
+        }
+        
+        .top-deals-container .dress >h3 {
+            display: inline;
+        }
+        .top-deals-container .dress > i {
+            font-size: 5vw;
+            margin-left: -5vw ;
+        }
+
+        /*latest-style*/
+
+        .container .latest-style {
+            margin-top: 38vh;
+            margin-left: 2vw;
+            border-radius: 10px;
+        }
+        .container .latest-style .shop {
+            text-align: center;
+            font-size : 8vw;
+        }
+        .container .latest-style .women-style {
+            margin-top:2vw;
+        }
+        .container .latest-style .women-style>img {
+            /* height: 40vh; */
+            width: 80vw;
+            border-radius: 10px;
+            margin-top: 4vw;
+        }
+
+        /*traditional-dress*/
+        .traditional-dress .traditional-slide {
+            display: flex;
+            flex-direction: column;
+        }
+        .traditional-dress .write-traditional {
+            font-size: 8vw;
+        }
+        .traditional-dress .t-dropdown {
+            /* height: 30vh; */
+            display: flex;
+            flex-direction: row;
+
+            /* gap:2vw; */
+            z-index: 100;
+            margin-left: 2vw;
+        }
+        .traditional-dress .t-dropdown .brands {
+            border:none;
+            display: inline;
+            position: absolute;
+            z-index: 1;
+        }
+        .traditional-dress .t-dropdown .brands>span {
+            font-size: 4vw;
+            align-items: center;
+            height: 3vh;
+            gap:6vw;
+            border: 2px solid black;
+        }
+        .traditional-dress .t-dropdown .brands .drop-arrow{
+            display: inline;
+        }
+        .t-dropdown .brands .brands-dropdown {
+            display: none;
+        }
+        .traditional-dress .t-dropdown .brands:hover .drop-arrow {
+    transform: rotate(180deg);
+        }
+        .t-dropdown .brands:hover .brands-dropdown {
+        display: block;
+        } 
+        .traditional-dress .t-dropdown .brands:hover {
+        border: 2px solid black;
+        }
+        .traditional-dress .t-dropdown .sort-by {
+            margin-left: 30vw;
+            border:none;
+            display: inline;
+            position: absolute;
+            z-index: 1;
+        }
+        .traditional-dress .t-dropdown .sort-by>span {
+            border:2px solid black;
+            font-size: 4vw;
+            gap:6vw;
+            height: 3vh;
+        }
+       .traditional-dress .t-dropdown .sort-by .drop-arrow {
+            display: inline;
+            
+            /* margin-right: -5vw; */
+        }
+        .t-dropdown .sort-by .sort-by-dropdown{
+            display:none;
+            margin-top: 2vh;
+            margin-left:-5vw;
+            width:25vw;
+        }
+        .traditional-dress .t-dropdown .sort-by:hover .drop-arrow {
+        transform: rotate(180deg);
+        }
+        .t-dropdown .sort-by:hover .sort-by-dropdown {
+        display: block;
+        }
+        .traditional-dress .t-dropdown .sort-by:hover {
+            border: 2px solid black;
+            }
+        .traditional-dress .t-dropdown .filters {
+            margin-left: 60vw;
+            border:none;
+            display: inline;
+            position: absolute;
+            z-index: 1;
+        }
+        .traditional-dress .t-dropdown .filters>span {
+            border:2px solid black;
+            font-size: 4vw;
+            gap:2vw;
+            height: 3vh;
+        }
+        .traditional-dress .t-dropdown .filters .drop-arrow {
+            display: inline;
+        }
+        .t-dropdown .filters  .filters-dropdown{
+            display:none;
+        }
+        .traditional-dress .t-dropdown .filters:hover .drop-arrow {
+        transform: rotate(180deg);
+        }
+         .t-dropdown .filters:hover .filters-dropdown {
+         display: block;
+        }
+        .traditional-dress .t-dropdown .filters:hover {
+            border: 2px solid black;
+            }
+        .traditional-slide .dress-slide {
+            /* border: 2px solid black; */
+            gap: 5vw;
+            margin-left:5vw;
+            margin-top:8vh;
+    }
+    .traditional-dress .dress-slide .t-dress>h3{
+        font-size: 5.5vw;
+    }
+
+/*western-dress*/
+    .western-slide {
+        margin-top: 187vh;
+    }
+    .western-slide .western-dress {
+        font-size: 12vw;
+    }
+    .western-slide .western-slider .img {
+        width:100vw;
+        margin-left:6vw;
+    }
+    .western-slide .western-slider .img>img{
+    width:80vw;
+    }
+    .contain .dress {
+        font-size: 10vw;
+        margin-left: 6vw;
+     }
+    .contain .content {
+        font-size: 5vw;
+    }
+    .contain .buynow {
+        font-size: 6vw;
+        margin-left: 20vw;
+        width: 45vw;
+    }
+    #swiper-button-prev {
+        width: 10vw;
+        height: 3vh;
+        border-radius: 50px;
+        }
+        #swiper-button-next{
+            width: 10vw;
+        height: 3vh;
+        border-radius: 50px;
+        }
+    
+    /*bridal-lehenga*/
+
+    .bridal-container{
+        margin-top: 2vh;
+    }
+
+    .write-bridal-lehenga {
+        font-size: 11vw;
+    }
+    .bridal-img {
+        width: 90%;
+        height: 70vh;
+        margin-left: 5vw;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .bridal-img .first-side1 {
+        width: 100%;
+    }
+    .bridal-img #b-img1-img , 
+    .bridal-img #b-img2-img ,
+    .bridal-img #b-img3-img {
+        width:80vw;
+        margin-left: 2vw;
+    }
+    .bridal-img #b1-content ,
+    .bridal-img #b2-content ,
+    .bridal-img #b3-content{
+        font-size: 3vw;
+        margin-left: 2.5vw;
+    }
+    .bridal-img #b-img1-img2 ,
+    .bridal-img #b-img2-img2 ,
+    .bridal-img #b-img3-img2 {
+        height:14vh;
+        margin-left: 2vw;
+        margin-top: 0.5vh;
+    }
+    .bridal-img #b-img1-img3 ,
+    .bridal-img #b-img2-img3 ,
+    .bridal-img #b-img3-img3 {
+        height:14vh;
+        margin-top: 0.1vh;
+    }
+    .bridal-img #bd1-paise ,
+    .bridal-img #bd2-paise ,
+    .bridal-img #bd3-paise {
+        font-size: 4vw;
+        margin-top: 0.5vh;
+        margin-left: 2vw;
+    }
+    .bridal-img #bd1-discount ,
+    .bridal-img #bd2-discount ,
+    .bridal-img #bd3-discount {
+        font-size: 4vw;
+        margin-top: 0.1vh;
+        margin-left: 2vw;
+    }
+    
+}
+@media (min-width:601px) and (max-width:1024px) {
+    .container .header {
+        /* background-color: rgb(71, 215, 71); */
+        height: 60px;
+    }
+
+    .header .right-side-navbar ul li {
+        font-size: 3vw;
+        margin-top: 3vw;
+        margin: 4vw;
+        margin-left: -3vw;
+    }
+
+    /*slider*/
+    .container .slider {
+    margin-top:3vh;
+    /* margin-bottom: -1vh; */
+    }
+    .slider .first-slide {
+        height:85vh;
+    }
+    .slider .first-slide div>button {
+        top:55vh;
+        height:7vh;
+        width: 25vw;
+    }
+    .slider .first-slide>img {
+        height:80vh;
+    }
+
+    /*top deals*/
+    .container .top-deals {
+        margin-top:90vh;
+        margin-left: 2vw; 
+    }
+    .container .top-deals .write-top-deal {
+        font-size: 7vw;
+    }
+    .container .top-deals .top-deals-container {
+        height: 47vh;
+        margin-top:1vw;
+    }
+    .top-deals-container .dress {
+        border:2px solid rgb(134, 133, 133);
+        height:50vh;
+        width:35vw;
+        flex-wrap: wrap;
+        gap:3vw;
+        text-align: center;
+        margin-top:2vw;
+    }
+    .top-deals-container .dress > img {
+        height: 35vh;
+        width:90%;
+    }
+    
+    .top-deals-container .dress >h3 {
+        display: inline;
+    }
+
+    /*latest-style*/
+    .container .latest-style {
+        margin-top:62vh;
+        margin-left: 2vw;
+        border-radius: 10px;
+    }
+    .container .latest-style .shop {
+        text-align: center;
+        font-size: 6vw;
+    }
+    .container .latest-style .women-style {
+        margin-top:2vw;
+    }
+    .container .latest-style .women-style>img {
+        height: 45vh;
+        width: 40vw;
+        border-radius: 10px;
+        margin-top: 4vh;
+    }
+
+    /* traditional dress*/
+
+    .traditional-slide .dress-slide {
+        /* border: 2px solid black; */
+        gap: 3vw;
+        display: flex;
+        justify-content: space-evenly;
+        /* margin-left:5vw; */
+        /* margin-top:7vh; */
+    }
+    .traditional-dress .dress-slide .t-dress {
+        height: 50vh;
+        width: 28vw;
+        margin-top: -1vw;
+        font-size: 1.9vw;
+    }
+
+    /*western-dress*/
+    .western-slide {
+        margin-top: 70vh;
+    }
+    .western-slide .western-dress {
+        font-size: 8vw;
+    }
+    .western-slide .western-slider .img {
+        width:30vw;
+        height: 60vh;
+        margin-left:6vw;
+    }
+    .western-slide .western-slider .img>img{
+    width:29vw;
+    height: 50vh;
+    }
+    .contain .dress {
+        font-size: 2.5vw;
+        margin-left: 6vw;
+     }
+    .contain .content {
+        font-size: 2vw;
+    }
+    .contain .buynow {
+        font-size: 2vw;
+        margin-left: 3vw;
+        width: 20vw;
+    }
+    #swiper-button-prev {
+        width: 5vw;
+        height: 4vh;
+        border-radius: 50px;
+        }
+        #swiper-button-next{
+            width: 5vw;
+        height: 4vh;
+        border-radius: 50px;
+        }
+        
+}
